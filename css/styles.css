@@ -130,10 +130,6 @@ button:active, .button__secondary:active, .button:active, .project__link:active 
     margin: 0 auto;
 }
 
-#link-and-buttons {
-    clear: both;
-}
-
 #izzy-pics {
     clear: both;
     max-width: 700px;
