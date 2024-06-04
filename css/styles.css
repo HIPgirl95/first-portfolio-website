@@ -36,6 +36,10 @@ body {
    grid-template-rows: auto 1fr auto;
 }
 
+main {
+    margin: 10px;
+}
+
 .work {
     text-align: center;
     padding: var(--standard-padding);
@@ -232,6 +236,19 @@ table, th, td {
     border-radius: 5%;
     border: var(--basic-border);
     box-shadow: var(--basic-shadow);
+}
+
+#contact-form {
+    background-color: var(--white);
+    border: var(--basic-border);
+    padding: var(--standard-padding);
+    max-width: 350px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+}
+
+.contact__item {
+    margin: auto;
 }
 
 svg {
