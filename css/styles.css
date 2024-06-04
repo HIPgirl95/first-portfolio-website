@@ -33,6 +33,11 @@ body {
    background-color: var(--background-color);
 }
 
+.work {
+    text-align: center;
+    padding: var(--standard-padding);
+}
+
 h1 {
     font-size: 30px;
     font-weight: var(--bold-font-weight);
