@@ -123,10 +123,6 @@ button:active, .button__secondary:active, .button:active, .project__link:active 
     border: var(--basic-border);
 }
 
-.page-footer {
-    clear: both;
-}
-
 .profile {
     max-width: var(--standard-max-width);
     margin: 0 auto;
