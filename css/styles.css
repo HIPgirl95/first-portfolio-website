@@ -174,6 +174,9 @@ button:active, .button__secondary:active, .button:active, .project__link:active 
 .page-header__item:last-child {
     flex-grow: 1;
     text-align: right;
+    font-size: 20px;
+    margin-right: var(--standard-padding);
+    margin: auto;
 }
 
 .navigation-list {
