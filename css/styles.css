@@ -143,6 +143,7 @@ button:active, .button__secondary:active, .button:active, .project__link:active 
     border: solid var(--border-color);
     border-radius: 25%;
     box-shadow: var(--basic-shadow);
+    margin: 5px;
 }
 
 .about-me {
