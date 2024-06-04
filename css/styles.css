@@ -222,8 +222,6 @@ table, th, td {
     box-shadow: var(--basic-shadow);
 }
 
-
-
 svg {
     width: 500px;
     height: auto;
