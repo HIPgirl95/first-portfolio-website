@@ -295,6 +295,19 @@ svg * {
         width: 100px;
         height: auto;
     }
+    .grid-about {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+    }
+    .grid-about__item:first-child {
+        grid-column: span 1;
+    }
+    .grid-about__item {
+        width: 95vw;
+    }
+    svg {
+        max-width: 95vw;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 768px) {
@@ -310,8 +323,22 @@ svg * {
         width: 200px;
     }
     .izzy-pics {
-        width: 100px;
+        width: 150px;
         height: auto;
+    }
+    .grid-about {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+    }
+    .grid-about__item:first-child {
+        grid-column: span 1;
+    }
+    .grid-about__item {
+        width: 95vw;
+        grid-column: span 1;
+    }
+    svg {
+        max-width: 95vw;
     }
 }
 
