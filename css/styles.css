@@ -138,12 +138,14 @@ button:active, .button__secondary:active, .button:active, .project__link:active 
 .profile {
     max-width: var(--standard-max-width);
     margin: 0 auto;
+    display: flex;
 }
 
 #izzy-pics {
     clear: both;
     max-width: var(--standard-max-width);
     margin: 0 auto;
+    flex-grow: 1;
 }
 
 .izzy-pics {
@@ -281,11 +283,35 @@ svg * {
     .grid {
         grid-template-columns: 1fr;
     }
+    .profile {
+        flex-direction: column;
+    }
+    .profile__portrait {
+        float: none;
+        align-self: center;
+        width: 200px;
+    }
+    .izzy-pics {
+        width: 100px;
+        height: auto;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr 1fr;
+    }
+    .profile {
+        flex-direction: column;
+    }
+    .profile__portrait {
+        float: none;
+        align-self: center;
+        width: 200px;
+    }
+    .izzy-pics {
+        width: 100px;
+        height: auto;
     }
 }
 
