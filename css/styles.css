@@ -127,18 +127,18 @@ button:active, .button__secondary:active, .button:active, .project__link:active 
 .profile__portrait {
     float: left;
     width: 250px;
-    margin-right: 40px;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin: 10px;
     border-radius: 50%;
     box-shadow: var(--basic-shadow);
     border: var(--basic-border);
+    align-self: center;
 }
 
 .profile {
     max-width: var(--standard-max-width);
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
 }
 
 #izzy-pics {
@@ -289,6 +289,7 @@ svg * {
     .profile__portrait {
         float: none;
         align-self: center;
+        margin: 5px;
         width: 200px;
     }
     .izzy-pics {
@@ -308,6 +309,28 @@ svg * {
     svg {
         max-width: 95vw;
     }
+    .page-header {
+        display: flex;
+        width: 100%;
+        padding: 5px;
+        border-bottom: var(--basic-border);
+    }
+    .page-header__item {
+        flex: 1 1 200px;
+    }
+    .page-header__item:last-child {
+        flex-grow: 1;
+        text-align: center;
+        font-size: 16px;
+        padding: 0px;
+    }
+    .navigation-list {
+        padding: 10px;
+        margin: 0px;
+    }
+    .about-me {
+        margin: 5px;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 768px) {
@@ -320,6 +343,7 @@ svg * {
     .profile__portrait {
         float: none;
         align-self: center;
+        margin: 5px;
         width: 200px;
     }
     .izzy-pics {
@@ -339,6 +363,22 @@ svg * {
     }
     svg {
         max-width: 95vw;
+    }
+    .page-header {
+        display: flex;
+        width: 100%;
+        padding: var(--standard-padding);
+        border-bottom: var(--basic-border);
+    }
+    .page-header__item {
+        flex: 0 1 200px;
+    }
+    .page-header__item:last-child {
+        flex-grow: 1;
+        text-align: right;
+        font-size: 20px;
+        padding: var(--standard-padding);
+        margin: auto;
     }
 }
 
