@@ -1,4 +1,118 @@
-* {
+:root {
+  --primary-color: #0b6840;
+  --secondary-color: #d2c4f0;
+  --dark-grey: #2b2b2b;
+  --background-color: #f4fff4;
+  --active-link: #3fb987;
+  --white: #fff;
+  --black: #000;
+  --highlight: rgba(255, 255, 255, 0.3);
+  --shadow: rgba(0, 0, 0, 0.3);
+  --border-color: rgba(38, 112, 80, 0.6);
+  --heading-line-height: 1.5;
+  --bold-font-weight: 700;
+  --basic-border: 2px solid var(--border-color);
+  --basic-shadow: 3px 3px 4px;
+  --button-shadow: 2px solid var(--shadow);
+  --button-highlight: 2px solid var(--highlight);
+  --standard-spacing: 10px;
+  --standard-max-width: 700px;
+  --standard-grid-gap: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--dark-grey);
+  background-color: var(--background-color);
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: var(--standard-spacing);
+  margin-bottom: var(--standard-spacing);
+}
+
+.bg-custom {
+  background-color: var(--background-color);
+}
+
+.profile {
+  max-width: var(--standard-max-width);
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me {
+  margin: 10px;
+}
+
+main,
+header {
+  border-bottom: var(--basic-border);
+}
+
+#logo {
+  max-width: 8%;
+  border: var(--basic-border);
+  border-radius: 10%;
+  box-shadow: var(--basic-shadow);
+}
+
+.nav-item {
+  padding: 15px;
+}
+
+.nav-link {
+  text-decoration: underline;
+  font-size: x-large;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: var(--basic-shadow);
+  border: var(--basic-border);
+  align-self: center;
+}
+
+.active {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: auto;
+  padding: 0px;
+}
+
+.btn-primary:hover {
+  background-color: lightgreen;
+  border-color: black;
+  color: black;
+}
+
+h1 {
+  justify-content: center;
+}
+
+.btn-secondary {
+  background-color: #c43b3b;
+  border-color: black;
+}
+
+/* * {
   box-sizing: border-box;
 }
 
@@ -69,18 +183,15 @@ a {
 }
 
 a:visited {
-  /* visited link */
   color: var(--primary-color);
 }
 
 a:hover,
 a:focus {
-  /* no underlining when hovering over a link */
   text-decoration: none;
 }
 
 a:active {
-  /* selected link */
   color: var(--active-link);
 }
 
@@ -409,7 +520,7 @@ svg * {
   h1 {
     font-size: 22px;
   }
-}
+} */
 
 /* 
 Colors used:
